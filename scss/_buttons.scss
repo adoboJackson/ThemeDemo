@@ -1,6 +1,7 @@
 // Common Colors
 
 $off-wht: rgba(white,.4);
+$rounded: 'Varela Round', sans-serif;
 
 // Button Base Styles
 
@@ -12,7 +13,7 @@ $off-wht: rgba(white,.4);
         border-radius: .625em;
         box-shadow: 0 .375em .313em -.313em rgba(black,.8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black,.15);
         color: #FFF;
-        font: bold 1em sans-serif;
+        font: normal 1em $rounded;
         text: {
                 transform: uppercase;
                 decoration: none;

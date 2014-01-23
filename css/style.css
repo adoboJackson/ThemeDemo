@@ -11,7 +11,7 @@ body {
   border-radius: .625em;
   box-shadow: 0 0.375em 0.313em -0.313em rgba(0, 0, 0, 0.8), inset 0 0.063em rgba(255, 255, 255, 0.4), inset 0 -0.188em rgba(0, 0, 0, 0.15);
   color: #FFF;
-  font: bold 1em sans-serif;
+  font: normal 1em "Varela Round", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   text-shadow: 0 0.063em rgba(0, 0, 0, 0.3);
