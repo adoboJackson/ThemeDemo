@@ -1,0 +1,51 @@
+/* Themes */
+@import 'mixins';
+/* Variables */
+$rounded: "Varela Round", sans-serif;
+$off-wht: rgba(white,.4);
+*{
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #DADADA;
+	font-family: $rounded;
+}
+
+@mixin link-theme($btn-color){//translate colors 
+	list-style: none;
+	background-color: $btn-color;
+	border: .094em solid darken($btn-color, 20%);
+	border-radius: .625em;
+	box-shadow: 0 .375em .313em -.313em rgba(black,.8), inset 0 .063em $off-wht, inset 0 -.188em rgba(black,.15);
+	margin: 1rem;
+	padding:0 .625em;
+	li{
+		display: inline-block;
+	}
+	a{
+		color: inherit;
+		display: block;
+		transition: 0.2s ease-in-out;
+		padding: 1em;
+		text: {
+			transform: uppercase;
+			decoration: none;
+			shadow: 0 .063em rgba(black,.3);
+		}
+		&:hover {
+			background-color: darken($btn-color, 6%);
+			box-shadow: inset 0 .063em $off-wht, inset 0 -.188em lighten($btn-color, 2%);
+		}
+		&:active {
+			box-shadow: 0 .063em $off-wht, inset 0 0 1.094em darken($btn-color, 40%), inset 0 .063em darken($btn-color, 20%),inset 0 -0.188em darken($btn-color, 20%); 
+		}
+	}
+}
+
+
+.nav{
+	color: $grey;
+	font: normal 1.8rem $rounded;
+	@include link-theme($silver);
+}

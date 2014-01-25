@@ -1,0 +1,41 @@
+//more pleasing html color palette (http://clrs.cc/)
+
+$navy: #001f3f;
+$blue: #0074d9;
+$aqua: #7fdbff;
+$teal: #39cccc;
+$olive: #3d9970;
+$green: #2ecc40;
+$lime: #01ff70;
+$yellow: #ffdc00;
+$orange: #ff851b;
+$red: #ff4136;
+$maroon: #85144b;
+$fuschia: #f012be;
+$purple: #b10dc9;
+$silver: #DDD;
+$gray: #AAA;
+$black: #111;
+
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+@mixin transition($prop: all, $time: 500ms, $ease: ease-out, $delay: 0) {
+	-webkit-transition: $prop $time $ease $delay;
+	-moz-transition: $prop $time $ease $delay;
+	-o-transition: $prop $time $ease $delay;
+	transition: $prop $time $ease $delay;
+}
+@mixin 	translateY($amount: 3px){
+	-webkit-transform: translateY($amount);
+	-moz-transform: translateY($amount);
+	-ms-transform: translateY($amount);
+	-o-transform: translateY($amount);
+	transform: translateY($amount);
+}	
+@mixin 	translateX($amount: 3px){
+	-webkit-transform: translateX($amount);
+	-moz-transform: translateX($amount);
+	-ms-transform: translateX($amount);
+	-o-transform: translateX($amount);
+	transform: translateX($amount);
+}
